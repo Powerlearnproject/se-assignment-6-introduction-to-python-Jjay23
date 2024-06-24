@@ -1,0 +1,203 @@
+1. Python Basics:
+
+Python is a high-level, interpreted programming language known for its simplicity and readability. Key features include:
+
+- Easy to learn and read: Python uses indentation and a clean syntax
+- Interpreted: No need to compile before running
+- Dynamically typed: Variable types are inferred at runtime
+- Extensive standard library and third-party packages
+- Cross-platform compatibility
+- Support for multiple programming paradigms (procedural, object-oriented, functional)
+
+Python is particularly effective for:
+- Web development (Django, Flask)
+- Data analysis and visualization (Pandas, Matplotlib)
+- Machine learning and AI (TensorFlow, PyTorch)
+- Scientific computing (NumPy, SciPy)
+- Automation and scripting
+- Rapid prototyping
+
+2. Installing Python:
+
+Here are general steps to install Python (for Windows):
+
+1. Visit python.org and download the latest version
+2. Run the installer, checking "Add Python to PATH"
+3. Open Command Prompt and type:
+
+```
+python --version
+```
+
+This should display the installed Python version.
+
+To set up a virtual environment:
+
+```
+python -m venv myenv
+myenv\Scripts\activate
+```
+
+3. Python Syntax and Semantics:
+
+Here's a simple "Hello, World!" program:
+
+```python
+print("Hello, World!")
+```
+
+Explanation:
+- `print()` is a built-in function
+- Parentheses `()` enclose the function arguments
+- Strings are enclosed in quotes (single or double)
+- No semicolon is needed at the end of the line
+
+4. Data Types and Variables:
+
+Basic Python data types:
+- int (integer)
+- float (decimal)
+- str (string)
+- bool (boolean)
+- list
+- tuple
+- dict (dictionary)
+- set
+
+Example script:
+
+```python
+# Integer
+age = 30
+print(f"Age: {age}, Type: {type(age)}")
+
+# Float
+height = 1.75
+print(f"Height: {height}, Type: {type(height)}")
+
+# String
+name = "James"
+print(f"Name: {name}, Type: {type(name)}")
+
+# Boolean
+is_student = True
+print(f"Is student: {is_student}, Type: {type(is_student)}")
+
+# List
+fruits = ["apple", "banana", "cherry"]
+print(f"Fruits: {fruits}, Type: {type(fruits)}")
+
+# Dictionary
+person = {"name": "Alice", "age": 25}
+print(f"Person: {person}, Type: {type(person)}")
+```
+
+5. Control Structures:
+
+Conditional statement example:
+
+```python
+age = 18
+
+if age >= 18:
+    print("You are an adult")
+else:
+    print("You are a minor")
+```
+
+For loop example:
+
+```python
+fruits = ["apple", "banana", "cherry"]
+
+for fruit in fruits:
+    print(f"I like {fruit}")
+```
+
+6. Functions in Python:
+
+Functions are reusable blocks of code that perform specific tasks. They improve code organization and reusability.
+
+Example function:
+
+```python
+def add_numbers(a, b):
+    return a + b
+
+# Calling the function
+result = add_numbers(5, 3)
+print(f"The sum is: {result}")
+```
+
+7. Lists and Dictionaries:
+
+Lists are ordered, mutable collections of items. Dictionaries are unordered collections of key-value pairs.
+
+Example script:
+
+```python
+# List operations
+numbers = [1, 2, 3, 4, 5]
+numbers.append(6)
+numbers.remove(3)
+print(f"Numbers: {numbers}")
+print(f"Second number: {numbers[1]}")
+
+# Dictionary operations
+person = {"name": "James", "age": 30}
+person["city"] = "NAIROBI"
+del person["age"]
+print(f"Person: {person}")
+print(f"Name: {person['name']}")
+```
+
+8. Exception Handling:
+
+Exception handling allows you to manage errors gracefully. Example:
+
+```python
+try:
+    number = int(input("Enter a number: "))
+    result = 10 / number
+    print(f"Result: {result}")
+except ValueError:
+    print("Invalid input. Please enter a number.")
+except ZeroDivisionError:
+    print("Cannot divide by zero.")
+finally:
+    print("Execution completed.")
+```
+
+9. Modules and Packages:
+
+Modules are Python files containing reusable code. Packages are directories containing multiple modules.
+
+Example using the `math` module:
+
+```python
+import math
+
+radius = 5
+area = math.pi * math.pow(radius, 2)
+print(f"The area of a circle with radius {radius} is {area:.2f}")
+```
+
+10. File I/O:
+
+Reading from a file:
+
+```python
+with open("example.txt", "r") as file:
+    content = file.read()
+    print(content)
+```
+
+Writing to a file:
+
+```python
+lines = ["First line", "Second line", "Third line"]
+
+with open("output.txt", "w") as file:
+    for line in lines:
+        file.write(line + "\n")
+```
