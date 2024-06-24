@@ -38,12 +38,6 @@ python -m venv myenv
 myenv\Scripts\activate
 ```
 
-For macOS/Linux, the activation command is slightly different:
-
-```
-source myenv/bin/activate
-```
-
 3. Python Syntax and Semantics:
 
 Here's a simple "Hello, World!" program:
@@ -82,7 +76,7 @@ height = 1.75
 print(f"Height: {height}, Type: {type(height)}")
 
 # String
-name = "Alice"
+name = "James"
 print(f"Name: {name}, Type: {type(name)}")
 
 # Boolean
@@ -94,7 +88,7 @@ fruits = ["apple", "banana", "cherry"]
 print(f"Fruits: {fruits}, Type: {type(fruits)}")
 
 # Dictionary
-person = {"name": "Bob", "age": 25}
+person = {"name": "Alice", "age": 25}
 print(f"Person: {person}, Type: {type(person)}")
 ```
 
@@ -150,8 +144,8 @@ print(f"Numbers: {numbers}")
 print(f"Second number: {numbers[1]}")
 
 # Dictionary operations
-person = {"name": "Alice", "age": 30}
-person["city"] = "New York"
+person = {"name": "James", "age": 30}
+person["city"] = "NAIROBI"
 del person["age"]
 print(f"Person: {person}")
 print(f"Name: {person['name']}")
